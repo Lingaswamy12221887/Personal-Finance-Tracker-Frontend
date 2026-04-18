@@ -22,7 +22,7 @@ const ExportData = ({ user }) => {
     // Load budgets from backend
     if (user?.id) {
       try {
-        const res = await fetch('http://localhost:5000/api/budgets', {
+        const res = await fetch('https://personal-finance-tracker-backend-ljou.onrender.com', {
           headers: { 'x-user-id': user.id }
         });
         const data = await res.json();
