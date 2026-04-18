@@ -21,7 +21,7 @@ const Predictions = ({ user }) => {
     let budgets = [];
     if (user?.id) {
       try {
-        const response = await fetch('http://localhost:5000/api/budgets', {
+        const response = await fetch('https://personal-finance-tracker-backend-ljou.onrender.com', {
           headers: { 'x-user-id': user.id }
         });
         const data = await response.json();
