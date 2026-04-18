@@ -51,7 +51,7 @@ const BudgetSetup = ({ user, onBudgetSetup }) => {
     try {
       // Save each budget to backend
       for (const budget of budgetsToSave) {
-        await fetch('http://localhost:5000/api/budgets', {
+        await fetch('https://personal-finance-tracker-backend-ljou.onrender.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(budget)
