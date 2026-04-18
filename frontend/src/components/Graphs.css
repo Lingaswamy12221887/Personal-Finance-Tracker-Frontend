@@ -1,0 +1,144 @@
+/* Graphs.css */
+.graphs-page {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.graphs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 24px;
+}
+
+.graph-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.graph-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.graph-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.graph-header {
+  margin-bottom: 20px;
+}
+
+.graph-header h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.graph-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.graph-container {
+  height: 350px;
+  position: relative;
+}
+
+.no-data {
+  background: white;
+  padding: 80px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-data-icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.no-data h3 {
+  margin: 0 0 12px 0;
+  color: #1f2937;
+  font-size: 24px;
+}
+
+.no-data p {
+  margin: 0 0 24px 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.btn-add-transaction {
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-add-transaction:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(16, 185, 129, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .graphs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .graphs-page {
+    padding: 16px;
+  }
+
+  .page-header h2 {
+    font-size: 24px;
+  }
+
+  .graph-container {
+    height: 280px;
+  }
+
+  .no-data {
+    padding: 60px 20px;
+  }
+
+  .no-data-icon {
+    font-size: 60px;
+  }
+
+  .no-data h3 {
+    font-size: 20px;
+  }
+}
